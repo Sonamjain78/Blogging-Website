@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Blogging Website</title>
+    <link rel="stylesheet" href="blogging.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">MyBlogPro</div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to MyBlogPro</h1>
+            <p>Your daily dose of knowledge, insights, and inspiration!</p>
+            <a href="#blogs" class="cta-button">Explore Blogs</a>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="blogs-section">
+        <div class="container">
+            <h2>Latest Blogs</h2>
+            <div class="blogs">
+                <!-- Blog 1 -->
+                <div class="blog-card" onclick="openModal(1)">
+                    <h3>Balancing Life & Tech</h3>
+                    <p>Discover how to balance college, coding, and creativity effectively...</p>
+                </div>
+                <!-- Blog 2 -->
+                <div class="blog-card" onclick="openModal(2)">
+                    <h3>Motivation Tips for Students</h3>
+                    <p>Practical advice to stay organized and inspired in your academic journey...</p>
+                </div>
+                <!-- Blog 3 -->
+                <div class="blog-card" onclick="openModal(3)">
+                    <h3>Creative Productivity Hacks</h3>
+                    <p>Simple changes to boost your creativity and productivity...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi! I'm a passionate blogger who loves sharing insights about life, coding, and creativity. Join me on this journey of learning and self-improvement.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MyBlogPro. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <script src="blogging.js"></script>
+</body>
+</html>
